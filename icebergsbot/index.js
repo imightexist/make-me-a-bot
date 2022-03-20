@@ -6,7 +6,7 @@ const name = "icebergsbot"
 const address = "172.81.110.67:6004";
 
 ws.on('connect',function(f){
-  function chat(str){
+  function send(str){
     f.sendUTF(encodeCommand(['chat',str]));
   }
   function rename(str){
