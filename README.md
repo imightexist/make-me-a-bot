@@ -5,3 +5,4 @@ request me to make a collabvm bot. the purpose of this is for the source code an
 2. what vm are you talking about
 3. what will be the name
 4. what commands will it have
+also i will not be hosting the bot, just coding it.
