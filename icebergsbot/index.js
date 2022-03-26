@@ -3,7 +3,7 @@ const ws = new websocketClient();
 const prefix = "!";
 const vmName = "kekvm1" //will not be used
 const name = "icebergsbot"
-const address = "172.81.110.67:6004";
+const address = "172.81.110.51:6004";
 
 ws.on('connect',function(f){
   function send(str){
