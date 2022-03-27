@@ -18,6 +18,10 @@ ws.on('connect',function(f){
     f.sendUTF(encodeCommand(['connect',vmName]));
     
     if (cmd[0] == "chat"){
+      if (cmd[1] == "jjjj"){
+	      send("jjjj fuck off");
+	      return;
+      }
       if (cmd[2] == prefix + "help"){
         send("https://github.com/imightexist/make-me-a-bot/blob/main/icebergsbot/help.md");
       }
