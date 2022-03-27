@@ -1,7 +1,7 @@
 const websocketClient = require('websocket').client;
 const ws = new websocketClient();
 const prefix = "!";
-const vmName = "kekvm1" //will not be used
+const vmName = "kekvm2" //will not be used
 const name = "icebergsbot"
 const address = "172.81.110.51:6004";
 
