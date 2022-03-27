@@ -15,10 +15,17 @@ ws.on('connect',function(f){
   f.on('message',function(msg){
     cmd = decodeCommand(msg.utf8Data);
     rename(name);
+    f.sendUTF(encodeCommand(['connect',vmName]));
     
     if (cmd[0] == "chat"){
       if (cmd[2] == prefix + "help"){
         send("https://github.com/imightexist/make-me-a-bot/blob/main/icebergsbot/help.md");
+      }
+      if (cmd[2] == prefix + "endturn"){
+        f.sendUTF(encodeCommand(['turn','0']));
+      }
+      if (cmd[2] == prefix + "taketurn"){
+        f.sendUTF(encodeCommand(['turn','1']));
       }
       if (cmd[2].startsWith(prefix + "say ")){
         send(cmd[2].replace(prefix + "say ",""));
