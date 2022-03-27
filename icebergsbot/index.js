@@ -22,6 +22,10 @@ ws.on('connect',function(f){
 	      send("jjjj fuck off");
 	      return;
       }
+      if (cmd[1] == "bbbb"){
+	      send("andrej trying to bypass blacklist???");
+	      return;
+      }
       if (cmd[2] == prefix + "help"){
         send("https://github.com/imightexist/make-me-a-bot/blob/main/icebergsbot/help.md");
       }
