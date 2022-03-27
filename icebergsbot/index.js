@@ -18,12 +18,8 @@ ws.on('connect',function(f){
     f.sendUTF(encodeCommand(['connect',vmName]));
     
     if (cmd[0] == "chat"){
-      if (cmd[1] == "jjjj"){
+      if (cmd[1] == "jjjj" || cmd[1] == "bbbb"){
 	      send("jjjj fuck off");
-	      return;
-      }
-      if (cmd[1] == "bbbb"){
-	      send("andrej trying to bypass blacklist???");
 	      return;
       }
       if (cmd[2] == prefix + "help"){
